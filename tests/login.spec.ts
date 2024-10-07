@@ -58,7 +58,8 @@ test('get started link', async ({ page }) => {
     await page.getByRole('row').nth(1).locator('mat-icon').click();
     await page.getByRole('cell', { name: 'Validée Remboursée' }).locator('span').nth(2).click({ timeout: 10000 });
     
-    
+  
+
    // test.setTimeout(12000)
     await page.locator('.btn-edit-statut > .text').first().click();
     await page.getByRole('row').nth(1).locator('div').nth(3).click();
@@ -66,6 +67,8 @@ test('get started link', async ({ page }) => {
 
     
   });
+
+
 
   test.afterEach(async ({ page }) => {
     await page.getByText('arrow_drop_down').click();
