@@ -16,7 +16,7 @@ const birthday = birthdayDate.toISOString().split('T')[0];
 
 
 
-test('Ajout collaborateur', async ({ collaboratorPage, page}) => {
+test.only('Ajout collaborateur', async ({ collaboratorPage, page}) => {
     await collaboratorPage.addCollaborator(prenom, nom, email, '77' +telephone.toString(), birthday, identifiant.toString(), 'Testeur', '2000000', '123456789', 'WAVE');
 });
 
