@@ -7,7 +7,7 @@ on:
     branches: [ main, master ]
 jobs:
   test:
-    timeout-minutes: 60
+   # timeout-minutes: 60
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
@@ -20,3 +20,14 @@ jobs:
       run: npx playwright install --with-deps
     - name: Run Playwright tests with allure report
       run: npm run  test:allure
+    - name: Upload Allure results # Sauvegarde du rapport Allure depuis le projet vers le CI
+      uses: actions/upload-artifact@v3 
+      with:
+        name: allure-report
+        path: allure-report  # Le répertoire contenant le rapport généré par Allure
+
+    - name: Deploy Allure Report to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }} # Utilise le token GitHub Actions pour publier le rapport
+        publish_dir: ./allure-repor

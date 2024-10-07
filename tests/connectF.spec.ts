@@ -81,30 +81,6 @@ test('update collab', async ({ page }) => {
 
  
 
-  /*
-  
-  import { test, expect } from '@playwright/test';
-
-test('test', async ({ page }) => {
-  await page.goto('https://app-dev.mossall.com/auth/login');
-  await page.getByPlaceholder('awafall@mossal.com').click();
-  await page.getByPlaceholder('awafall@mossal.com').fill('genieouzog+atos@gmail.com');
-  await page.getByPlaceholder('entrer votre mot de passe').click();
-  await page.getByPlaceholder('entrer votre mot de passe').fill('$Mossal1234');
-  await page.getByRole('button', { name: 'Se connecter' }).click();
-  await page.getByText('peopleCollaborateurs').click();
-  await page.getByRole('row', { name: 'matricule_testeur test' }).locator('mat-icon').first().click();
-  await page.locator('#dropdown-action > div > span:nth-child(2)').first().click();
-  await page.getByPlaceholder('John', { exact: true }).click();
-  await page.getByPlaceholder('John', { exact: true }).fill('Fatou');
-  await page.getByPlaceholder('Doe').click();
-  await page.getByPlaceholder('Doe').click();
-  await page.getByPlaceholder('Doe').click();
-  await page.getByPlaceholder('Doe').fill('FALL');
-  await page.getByRole('button', { name: 'Sauvegarder' }).click();
-});
-  
-  */
   
   
 
