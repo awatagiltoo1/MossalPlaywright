@@ -25,7 +25,7 @@ jobs:
     - name: Run Playwright tests with allure report
       run: npm run  test:allure
     - name: Upload Allure results # Sauvegarde du rapport Allure depuis le projet vers le CI
-      uses: actions/upload-artifact@v3 
+      uses: actions/upload-artifact@v4
       with:
         name: allure-report
         path: allure-report  # Le répertoire contenant le rapport généré par Allure
