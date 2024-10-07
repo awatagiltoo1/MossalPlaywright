@@ -34,5 +34,5 @@ jobs:
       uses: peaceiris/actions-gh-pages@v4
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }} # Utilise le token GitHub Actions pour publier le rapport allure
-        publish_dir: ./allure-repor
+        publish_dir: ./allure-report
         
