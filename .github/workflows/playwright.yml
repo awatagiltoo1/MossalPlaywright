@@ -31,7 +31,7 @@ jobs:
         path: allure-report  # Le répertoire contenant le rapport généré par Allure
 
     - name: Deploy Allure Report to GitHub Pages
-      uses: peaceiris/actions-gh-pages@v3
+      uses: peaceiris/actions-gh-pages@v4
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }} # Utilise le token GitHub Actions pour publier le rapport allure
         publish_dir: ./allure-repor
