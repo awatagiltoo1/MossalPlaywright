@@ -12,6 +12,7 @@ jobs:
     # Ajoute "permissions" pour s'assurer que le bot GitHub Actions dispose des droits de modification (write) sur le contenu du dépôt, ce qui est nécessaire pour pousser sur gh-pages.
     permissions:      
        contents: write  # Donne l'accès en écriture pour le contenu du dépôt sur gth-pages.
+       
     steps:
     - uses: actions/checkout@v4
     - uses: actions/setup-node@v4
@@ -32,5 +33,6 @@ jobs:
     - name: Deploy Allure Report to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       with:
-        github_token: ${{ secrets.GITHUB_TOKEN }} # Utilise le token GitHub Actions pour publier le rapport
+        github_token: ${{ secrets.GITHUB_TOKEN }} # Utilise le token GitHub Actions pour publier le rapport allure
         publish_dir: ./allure-repor
+        
