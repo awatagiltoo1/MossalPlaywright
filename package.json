@@ -5,7 +5,6 @@
   "main": "index.js",
   "scripts": {
     "clean:allure": "rimraf allure-results && rimraf allure-report",
-   // "test": "playwright test tests/demoFixture.spec.ts", 
    "test": "playwright test", 
     "allure:generate": "allure generate --clean",
     "allure:open": "allure open",
