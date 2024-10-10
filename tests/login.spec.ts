@@ -33,7 +33,7 @@ test('get started link', async ({ page }) => {
     await page.getByLabel('Fonction').fill('Manager');
     await page.locator('#birthDate').fill('2000-01-02');
    // await page.getByLabel('Identifiant unique').fill('20010014');
-    await page.getByLabel('Identifiant unique').fill(idenUser.toString());
+    await page.getByLabel('Matricule').fill(idenUser.toString());
     await page.getByLabel('Salaire').fill('550000');
     //await page.getByLabel('N° Compte Bancaire').fill('1110012');
     await page.getByLabel('N° Compte Bancaire').fill(CompteBancaire);
@@ -59,11 +59,12 @@ test('get started link', async ({ page }) => {
     await page.getByRole('cell', { name: 'Validée Remboursée' }).locator('span').nth(2).click({ timeout: 10000 });
     
   
-
-   // test.setTimeout(12000)
     await page.locator('.btn-edit-statut > .text').first().click();
     await page.getByRole('row').nth(1).locator('div').nth(3).click();
-    await page.getByRole('button', { name: 'Confirmer' }).click();
+   
+   //await page.getByRole('button', { name: 'confirm' });
+   await page.getByRole('button', { name: 'cancel' });
+    
 
     
   });

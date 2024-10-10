@@ -43,7 +43,7 @@ test('get started link', async ({ page }) => {
     await page.getByLabel('Fonction').fill('Manager');
     await page.locator('#birthDate').fill('2000-01-02');
    
-    await page.getByLabel('Identifiant unique').fill(idenUser.toString());
+    await page.getByLabel('Matricule').fill(idenUser.toString());
     await page.getByLabel('Salaire').fill('550000');
 
     await page.getByLabel('N° Compte Bancaire').fill(CompteBancaire);
