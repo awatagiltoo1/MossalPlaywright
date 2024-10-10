@@ -1,1 +1,1 @@
-[{"uid":"91e1b47f76017a37","name":"Ajout collaborateur","time":{"start":1728316778986,"stop":1728316781442,"duration":2456},"status":"passed","severity":"normal"}]
+[{"uid":"f230a72c243eac17","name":"Ajout collaborateur","time":{"start":1728550718490,"stop":1728550723932,"duration":5442},"status":"passed","severity":"normal"},{"uid":"6ae8c1c81bbb9c02","name":"valider une demande","time":{"start":1728550725996,"stop":1728550730971,"duration":4975},"status":"passed","severity":"normal"}]
