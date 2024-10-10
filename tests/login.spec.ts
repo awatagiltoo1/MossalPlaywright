@@ -53,17 +53,18 @@ test('get started link', async ({ page }) => {
     await page.getByText('Statut').click();
     await page.getByText('Validée').click();
     await page.getByText('Liste des demandes').click();
+    //utilisation d'une classe précéder d'un (.)
     await page.locator('.dropdown > .mat-icon').first().click();
+    //utilisation id précéder d'un #
     await page.locator('#dropdown-statut').getByText('Validée').click();
     await page.getByRole('row').nth(1).locator('mat-icon').click();
     await page.getByRole('cell', { name: 'Validée Remboursée' }).locator('span').nth(2).click({ timeout: 10000 });
     
   
     await page.locator('.btn-edit-statut > .text').first().click();
-    await page.getByRole('row').nth(1).locator('div').nth(3).click();
-   
-   //await page.getByRole('button', { name: 'confirm' });
-   await page.getByRole('button', { name: 'cancel' });
+    await page.getByText('Remboursée').nth(1).click();   
+    await page.getByRole('button', { name: 'Confirmer' }).click();
+    //await page.getByRole('button', { name: 'cancel' });
     
 
     
