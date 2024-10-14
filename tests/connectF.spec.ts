@@ -44,7 +44,7 @@ test('get started link', async ({ page }) => {
     await page.locator('#birthDate').fill('2000-01-02');
    
     await page.getByLabel('Matricule').fill(idenUser.toString());
-    await page.getByLabel('Salaire').fill('550000');
+    await page.getByLabel('Salaire').fill('555000');
 
     await page.getByLabel('N° Compte Bancaire').fill(CompteBancaire);
 
