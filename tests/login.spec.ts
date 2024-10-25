@@ -71,7 +71,6 @@ test('get started link', async ({ page }) => {
   });
 
 
-
   test.afterEach(async ({ page }) => {
     await page.getByText('arrow_drop_down').click();
     await page.getByText('Déconnexion').click();
