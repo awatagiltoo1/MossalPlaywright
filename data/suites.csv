@@ -1,2 +1,2 @@
 "DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
-"","6834","@KAN-1 Ajout collaborateur","chromium","Fri Oct 25 08:21:18 UTC 2024","passed","Fri Oct 25 08:21:24 UTC 2024","","demoFixture.spec.ts","",""
+"","7760","@KAN-1 Ajout collaborateur","chromium","Tue Nov 19 08:09:47 UTC 2024","passed","Tue Nov 19 08:09:55 UTC 2024","","demoFixture.spec.ts","",""
